@@ -1,0 +1,22 @@
+COMP 121 Assignments
+===================
+
+```{r include=FALSE}
+require(xtable)
+options(xtable.type="html")
+```
+
+
+This github repository has templates for COMP 121 assignments. 
+
+Students in COMP 121 create their own github repository *with a different name* but with a directory structures and file names that **exactly** duplicate the ones here.
+
+Student push to their own repositories to hand in their assignments.  This repository just specifies the structure you should use and sometimes provides template files that you can modify within your own repository.
+
+For your convenience, here is a listing of the files in this repository.  Many of the files are **not** ones that you will create directly in an editor, but are the results of a compilation process.  You should learn to distinguish one from the other.
+
+```{r echo=FALSE,results="asis"}
+allNames <- file.info(list.files(full.names=TRUE,recursive=TRUE,include.dirs=TRUE))
+fileListing <- data.frame("File Name"=row.names(allNames),"File Size"=allNames$size,Link=paste("<a href='",row.names(allNames),"'>link</a>",sep=""))
+print(xtable(fileListing),sanitize.text.function=I)
+```
