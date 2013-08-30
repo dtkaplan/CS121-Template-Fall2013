@@ -1,4 +1,4 @@
-CS121-Work
+COMP 121 Assignments
 ==========
 
-Testing the work handed in for CS 121
+A repository giving the structure of COMP 121 assignments and templates for many of the assignments.
